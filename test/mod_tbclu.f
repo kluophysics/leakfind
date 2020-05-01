@@ -1,0 +1,62 @@
+C*==mod_tbclu.f    processed by SPAG 6.55Rc at 11:07 on 11 Jul 2009
+      MODULE MOD_TBCLU
+C   ********************************************************************
+C   *                                                                  *
+C   *  module to store all variables connected with                    *
+C   *  the set up of the  TB clusters                                  *
+C   *                                                                  *
+C   ********************************************************************
+C
+      IMPLICIT NONE
+C
+C*** Start of declarations rewritten by SPAG
+C
+C Local variables
+C
+      REAL*8 CGNT(:),CLURAD_RS,DSSP_RS(:,:),FL1L2(:,:),R0ICLU_GEO(:,:,:)
+     &       ,RGNT_CLU(:),RI0CLU_GEO(:,:,:),RQCLU_GEO(:,:,:),
+     &       RSSP_RS(:,:,:),CLURYLM_RS(:,:,:)
+      COMPLEX*16 CLUIPH_RS(:,:,:)
+      INTEGER ICLU_GEO_ICLU_REF(:),ICLU_GEO_IQ(:),ICLU_REF_ICLU_GEO(:,:)
+     &        ,ICLU_REF_IQ(:),IL3RGNT(:),IND0QCLU0_RS(:,:),
+     &        IND0QCLU_GEO(:,:),IQCLUTAB_RS(:,:,:),IQREP_ICLU_GEO(:),
+     &        IQTBORGQTBP(:,:),IQTB_IQCLU_ICLU_REF(:,:),
+     &        IQ_IQCLU_GEO_IQCNTR(:,:),IQ_IQCLU_ICLU_REF(:,:),
+     &        IREF_IQCLU_ICLU_REF(:,:),ISDA4_RS(:,:,:),ISSP2AB_RS(:,:),
+     &        ISSP2BB_RS(:,:),ISSP4_RS(:,:,:),ISSP5_RS(:,:,:),
+     &        ISSPDIR_RS(:,:),JQCLUTAB_RS(:,:,:),JSDA4_RS(:,:,:),
+     &        LM3RGNT(:),NCLU_GEO,NCLU_REF,NCLU_REF_ICLU_GEO(:),
+     &        NIJSTABMAX,NIJSTAB_RS(:,:),NKKRNR_RSMAX,NKKR_RS(:),
+     &        NLMQCLU_GEO(:,:),NQCLU_GEO(:),NQCLU_GEOMAX,
+     &        NQCLU_ICLU_REF(:),NRGNT(:),NRGNT123MAX,NRGNT12MAX,
+     &        NSHLCLU_GEO,NSSP1_RS(:),NSSP2A_RS(:),NSSP2B_RS(:),
+     &        NSSP4MAX,NSSP4_RS(:,:),NSSPABS_RS(:),NSSPDIR_RS(:)
+      SAVE CGNT,CLUIPH_RS,CLURAD_RS,CLURYLM_RS,DSSP_RS,FL1L2,
+     &     ICLU_GEO_ICLU_REF,ICLU_GEO_IQ,ICLU_REF_ICLU_GEO,ICLU_REF_IQ,
+     &     IL3RGNT,IND0QCLU0_RS,IND0QCLU_GEO,IQCLUTAB_RS,IQREP_ICLU_GEO,
+     &     IQTBORGQTBP,IQTB_IQCLU_ICLU_REF,IQ_IQCLU_GEO_IQCNTR,
+     &     IQ_IQCLU_ICLU_REF,IREF_IQCLU_ICLU_REF,ISDA4_RS,ISSP2AB_RS,
+     &     ISSP2BB_RS,ISSP4_RS,ISSP5_RS,ISSPDIR_RS,JQCLUTAB_RS,JSDA4_RS,
+     &     LM3RGNT,NCLU_GEO,NCLU_REF,NCLU_REF_ICLU_GEO,NIJSTABMAX,
+     &     NIJSTAB_RS,NKKRNR_RSMAX,NKKR_RS,NLMQCLU_GEO,NQCLU_GEO,
+     &     NQCLU_GEOMAX,NQCLU_ICLU_REF,NRGNT,NRGNT123MAX,NRGNT12MAX,
+     &     NSHLCLU_GEO,NSSP1_RS,NSSP2A_RS,NSSP2B_RS,NSSP4MAX,NSSP4_RS,
+     &     NSSPABS_RS,NSSPDIR_RS,R0ICLU_GEO,RGNT_CLU,RI0CLU_GEO,
+     &     RQCLU_GEO,RSSP_RS
+C
+C*** End of declarations rewritten by SPAG
+C
+      ALLOCATABLE IQREP_ICLU_GEO,NQCLU_GEO,IQ_IQCLU_GEO_IQCNTR
+      ALLOCATABLE RSSP_RS,RQCLU_GEO,DSSP_RS,CGNT,IL3RGNT,LM3RGNT
+      ALLOCATABLE NIJSTAB_RS,ISSP2AB_RS,ISSP2BB_RS,IQCLUTAB_RS
+      ALLOCATABLE JQCLUTAB_RS,NSSP4_RS,ISSP4_RS,ISDA4_RS,JSDA4_RS
+      ALLOCATABLE ISSPDIR_RS,ISSP5_RS
+      ALLOCATABLE NSSP1_RS,NSSP2A_RS,NSSP2B_RS,NSSPDIR_RS,NSSPABS_RS
+      ALLOCATABLE CLURYLM_RS,CLUIPH_RS,IND0QCLU_GEO,IND0QCLU0_RS,FL1L2
+      ALLOCATABLE NKKR_RS,NLMQCLU_GEO,ICLU_GEO_IQ
+      ALLOCATABLE ICLU_REF_ICLU_GEO,NCLU_REF_ICLU_GEO,ICLU_GEO_ICLU_REF
+      ALLOCATABLE IREF_IQCLU_ICLU_REF,ICLU_REF_IQ
+      ALLOCATABLE NQCLU_ICLU_REF,IQ_IQCLU_ICLU_REF,IQTB_IQCLU_ICLU_REF
+      ALLOCATABLE R0ICLU_GEO,RI0CLU_GEO
+      ALLOCATABLE RGNT_CLU,NRGNT,IQTBORGQTBP
+      END
